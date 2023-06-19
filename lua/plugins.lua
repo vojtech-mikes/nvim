@@ -11,10 +11,18 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+vim.cmd([[ 
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+  augroup end
+]])
 
 
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
+
+  use 'folke/tokyonight.nvim'
 
 	if packer_bootstrap then
     		require('packer').sync()
