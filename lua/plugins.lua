@@ -24,6 +24,13 @@ return require('packer').startup(function(use)
 
   use 'folke/tokyonight.nvim'
 
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+  }
+
 	if packer_bootstrap then
     		require('packer').sync()
   	end

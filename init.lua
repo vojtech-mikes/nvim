@@ -1,3 +1,5 @@
 require("plugins")
 require("config/options")
 require("config/colorscheme")
+require("config/keymaps")
+require("plug-conf/nvim-tree")
