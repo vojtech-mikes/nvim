@@ -22,6 +22,8 @@ vim.cmd([[
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 
+  use 'nvim-lua/plenary.nvim'
+
   use 'folke/tokyonight.nvim'
 
   use {
@@ -30,6 +32,10 @@ return require('packer').startup(function(use)
       'nvim-tree/nvim-web-devicons', -- optional
     },
   }
+
+  use {'nvim-telescope/telescope.nvim', tag = '0.1.1'}
+
+  use { 'nvim-telescope/telescope-fzf-native.nvim'}
 
 	if packer_bootstrap then
     		require('packer').sync()
