@@ -10,8 +10,7 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
 
--- wraps text to false
-opt.wrap = false
+opt.wrap = true
 
 -- ignore cases when searching match
 opt.ignorecase = true

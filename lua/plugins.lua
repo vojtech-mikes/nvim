@@ -24,7 +24,7 @@ return require('packer').startup(function(use)
 
   use 'nvim-lua/plenary.nvim'
 
-  use 'folke/tokyonight.nvim'
+  use "savq/melange-nvim"
 
   use {
     'nvim-tree/nvim-tree.lua',
