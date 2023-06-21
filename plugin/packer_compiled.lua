@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/vojtechmikes/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/vojtechmikes/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/Users/vojtechmikes/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",

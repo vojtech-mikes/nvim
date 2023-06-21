@@ -68,6 +68,11 @@ return require('packer').startup(function(use)
 	  tag = "v1.2.1",
   })
 
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+
 	if packer_bootstrap then
     		require('packer').sync()
   	end
