@@ -24,7 +24,7 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 local lspconfig = require('lspconfig')
 
-local servers = { 'rust_analyzer', 'lua_ls', "vtsls"}
+local servers = { 'rust_analyzer', 'lua_ls', "vtsls", "pyright"}
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     -- on_attach = my_custom_on_attach,

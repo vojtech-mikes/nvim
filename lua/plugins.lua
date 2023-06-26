@@ -24,7 +24,7 @@ return require('packer').startup(function(use)
 
   use 'nvim-lua/plenary.nvim'
 
-  use "savq/melange-nvim"
+  use 'projekt0n/github-nvim-theme'
 
   use {
     'nvim-tree/nvim-tree.lua',
@@ -71,6 +71,11 @@ return require('packer').startup(function(use)
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+
+  use {
+    "windwp/nvim-autopairs",
+   config = function() require("nvim-autopairs").setup {} end
   }
 
 	if packer_bootstrap then
