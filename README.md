@@ -1,4 +1,4 @@
-# Vojtovo dotfiles
+# Vojtovo nvim config
 
 Collections of my nvim configuration.
 
